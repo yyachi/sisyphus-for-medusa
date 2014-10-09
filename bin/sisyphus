@@ -2,5 +2,6 @@
 require 'sisyphus/runner'
 
 args = ARGV.clone
-Sisyphus::Runner.new.run args
+app = Sisyphus::Runner.new
+app.run args
 

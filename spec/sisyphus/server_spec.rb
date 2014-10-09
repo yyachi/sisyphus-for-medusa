@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'sisyphus'
 require 'sisyphus/server'
 require 'rack/test'
 require 'medusa_rest_client'

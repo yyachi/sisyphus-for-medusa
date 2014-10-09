@@ -46,7 +46,7 @@ module Sisyphus
 	cmd
   end
 
-  def self.system(cmd)
+  def self.execute_command(cmd)
   	system(cmd)
   end
 end

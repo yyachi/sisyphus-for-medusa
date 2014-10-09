@@ -48,7 +48,7 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 		Sisyphus.print_timeout = print_timeout if print_timeout
 		app_url = "http://localhost:#{options[:port]}"
 		launch_cmd = "#{Sisyphus.open_command} #{app_url}"
-		Sisyphus.system(launch_cmd)
+		Sisyphus.execute_command(launch_cmd)
 		Sisyphus::Server.run! options
 	end
 end
