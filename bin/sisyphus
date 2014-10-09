@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'sisyphus/runner'
+
+args = ARGV.clone
+Sisyphus::Runner.new.run args
+
