@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sisyphus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "dream-of-sisyphus"
+  spec.name          = "sisyphus-for-medusa"
   spec.version       = Sisyphus::VERSION
   spec.authors       = ["Yusuke Yachi"]
   spec.email         = ["yyachi@misasa.okayama-u.ac.jp"]
