@@ -7,7 +7,7 @@ GUI client application for Medusa
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sisyphus'
+gem 'sisyphus-for-medusa'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sisyphus
+    $ gem install sisyphus-for-medusa
 
 ## Usage
 
