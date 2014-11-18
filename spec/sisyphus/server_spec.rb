@@ -3,7 +3,7 @@ require 'sisyphus'
 require 'sisyphus/server'
 require 'rack/test'
 require 'medusa_rest_client'
-require 'tepra'
+#require 'tepra'
 
 module Sisyphus
 	describe Server do
@@ -27,7 +27,7 @@ module Sisyphus
 
 			end
 
-			context "with params" do
+			context "with params", :current => true do
 				let(:stone_obj){ FactoryGirl.build(:stone, stone_param.merge("global_id" => stone_gid)) }
 				let(:file_obj){ FactoryGirl.build(:attachment_file,file_param.merge("global_id" => '0000-002')) }
 				let(:params){{"stone" => stone_param, "file" => post_file}}
@@ -61,13 +61,14 @@ module Sisyphus
 				}
 
 				it "should call Tepra.print with label_string" do
-					expect(Tepra).to receive(:print).with("#{stone_obj.global_id},\"#{stone_obj.name}\"", {:timeout => Sisyphus.print_timeout}).and_return(true)
+					expect(Sisyphus).to receive(:print)
+					#expect(Tepra).to receive(:print).with("#{stone_obj.global_id},\"#{stone_obj.name}\"", {:timeout => Sisyphus.print_timeout}).and_return(true)
 					post '/', params
 				end
 			end
 		end
 
-		describe "get '/'", :current => true do
+		describe "get '/'" do
 			before do
 				get '/'
 				puts last_response.body

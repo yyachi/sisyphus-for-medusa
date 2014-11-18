@@ -17,7 +17,7 @@ Spork.prefork do
   require 'sinatra/reloader'
 
   require 'medusa_rest_client'
-  require 'tepra'
+#  require 'tepra'
 
   FactoryGirl.find_definitions
 

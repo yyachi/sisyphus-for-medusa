@@ -3,7 +3,7 @@ module Sisyphus
 	require 'sinatra/base'
 	require 'sinatra/reloader'
 	require 'medusa_rest_client'
-	require 'tepra'
+#	require 'tepra'
 	MedusaRestClient::Base.init
 
 	class Server < Sinatra::Base
@@ -34,7 +34,11 @@ module Sisyphus
 						path = file[:tempfile].path
 						stone.upload_file(:file => path, :filename => filename)
 					end
-					Tepra.print(label_string, :timeout => Sisyphus.print_timeout)
+					begin
+						Sisyphus.print(stone)
+					rescue
+					end
+					#Tepra.print(label_string, :timeout => Sisyphus.print_timeout)
 				end
 			end
 			redirect '/'

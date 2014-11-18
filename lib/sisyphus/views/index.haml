@@ -1,7 +1,9 @@
-%form{:action => "/", :method => "post", :enctype => 'multipart/form-data'}
-  name:
-  %input.form-input{ :name => 'stone[name]', :type => "text", :size => "20" }
-  %br
-  %input{:type => 'file', :name => 'file'}
-  %br
-  %input{ :name => "submit", :type => 'submit', :value => 'add'}
+.container-fluid
+  %form{:method => "post", :action => '/', :enctype => 'multipart/form-data'}
+    .form-group
+      %input.form-control{type: "text", name: 'stone[name]', placeholder: "name"}
+    .form-group
+      %input.filestyle{:type => 'file', :name => 'file'}      
+    .form-group
+      %button.btn.btn-primary{:type => "submit"}
+        Create stone and print label

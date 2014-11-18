@@ -21,6 +21,13 @@ module Sisyphus
   	@print_timeout || default_print_timeout
   end
 
+  def self.print(obj)
+    #label_string = "#{obj.global_id},\"#{obj.name}\""
+    #Tepra.print(label_string, :timeout => Sisyphus.print_timeout)
+    uri = URI.parse("http://localhost:8889/Format/Print?UID=#{obj.global_id}&NAME=#{obj.name}")
+    res = Net::HTTP.get_response(uri)
+  end
+
   @title = nil
 
   def self.default_title
