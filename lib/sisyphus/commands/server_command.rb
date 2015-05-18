@@ -49,6 +49,11 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 		app_url = "http://localhost:#{options[:port]}"
 		launch_cmd = "#{Sisyphus.open_command} #{app_url}"
 		Sisyphus.execute_command(launch_cmd)
+		run_server(options)
+		#Sisyphus::Server.run! options
+	end
+
+	def run_server(options)
 		Sisyphus::Server.run! options
 	end
 end

@@ -7,6 +7,9 @@ require 'medusa_rest_client'
 
 module Sisyphus
 	describe Server do
+		before do
+			#FactoryGirl.clean_registry
+		end
 		include Rack::Test::Methods
 
 		def app
@@ -41,7 +44,7 @@ module Sisyphus
 				let(:filename){'Desert.jpg'}
 
 				before do
-					FakeWeb.allow_net_connect = false					
+			#		FakeWeb.allow_net_connect = false					
 					MedusaRestClient::Stone = double("MedusaRestClient::Stone")
 					MedusaRestClient::Stone.stub(:new).with(stone_param).and_return(stone_obj)
 					stone_obj.stub(:save).and_return(true)
@@ -71,7 +74,6 @@ module Sisyphus
 		describe "get '/'" do
 			before do
 				get '/'
-				puts last_response.body
 			end
 
 			context "without params" do

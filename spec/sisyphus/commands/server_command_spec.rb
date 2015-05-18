@@ -25,8 +25,8 @@ module Sisyphus::Commands
 			before do
 
 				cmd.stub(:options).and_return(options)
-				Sisyphus::Server = double("Sisyphus::Server")
-				allow(Sisyphus::Server).to receive(:run!)
+#				Sisyphus::Server = double("Sisyphus::Server")
+				allow(cmd).to receive(:run_server)
 				allow(Sisyphus).to receive(:execute_command).and_return(true)
 				allow(Sisyphus).to receive(:open_command).and_return('ooopen')
 			end
@@ -52,7 +52,7 @@ module Sisyphus::Commands
 				end
 
 				it "should call Sisyphus::Server.run!" do
-					expect(Sisyphus::Server).to receive(:run!).with({:port => port, :bind => bind })
+					expect(cmd).to receive(:run_server).with({:port => port, :bind => bind })
 					cmd.execute
 				end
 
