@@ -1,6 +1,6 @@
 # Sisyphus
 
-GUI client application for Medusa
+Provide a GUI client application for Medusa
 
 ## Installation
 
@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-    $ sisyphus
+See online document:
+
+    $ sisyphus --help
 
 ## Contributing
 
