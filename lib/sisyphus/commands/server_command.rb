@@ -39,7 +39,24 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 
 	end
 
-	def execute
+def description
+		<<-EOF
+GUI client application for Medusa
+
+Example:
+    $ sisyphus
+
+See Also:
+    http://dream.misasa.okayama-u.ac.jp
+
+Implementation:
+    Copyright (c) 2015 ISEI, Okayama University
+    Licensed under the same terms as Ruby
+
+EOF
+	end
+
+    def execute
 		args = options.delete(:args)
 		build_args = options.delete(:build_args)
 		title = options.delete(:title)
