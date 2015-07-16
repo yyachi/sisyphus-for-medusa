@@ -19,6 +19,14 @@ Or install it yourself as:
     $ gem source -a http://dream.misasa.okayama-u.ac.jp/rubygems
     $ gem install sisyphus-for-medusa
 
+## Commands
+
+Commands are summarized as:
+
+| command          | description                                   | note                       |
+|------------------|-----------------------------------------------|----------------------------|
+| sisyphus         | Sisyphus HTTP server                          |                            |
+
 ## Usage
 
 See online document:
