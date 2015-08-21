@@ -1,6 +1,6 @@
 # Sisyphus
 
-Provide a GUI client application for Medusa
+Provide a GUI-based web-client application for Medusa
 
 ## Dependency
 
