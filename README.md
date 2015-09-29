@@ -1,13 +1,13 @@
-# Sisyphus
+# sisyphus-for-medusa
 
 Provide a GUI-based web-client application for Medusa
 
-## Dependency
+# Dependency
 
-### [medusa_rest_client](http://devel.misasa.okayama-u.ac.jp/gitlab/gems/medusa_rest_client/tree/master "follow instruction")
+## [medusa_rest_client](http://devel.misasa.okayama-u.ac.jp/gitlab/gems/medusa_rest_client/tree/master "follow instruction")
 
 
-## Installation
+# Installation
 
 Add this line to your application's Gemfile:
 
@@ -24,7 +24,7 @@ Or install it yourself as:
     $ gem source -a http://dream.misasa.okayama-u.ac.jp/rubygems
     $ gem install sisyphus-for-medusa
 
-## Commands
+# Commands
 
 Commands are summarized as:
 
@@ -32,13 +32,13 @@ Commands are summarized as:
 |------------------|-----------------------------------------------|----------------------------|
 | sisyphus         | Sisyphus HTTP server                          |                            |
 
-## Usage
+# Usage
 
 See online document:
 
     $ sisyphus --help
 
-## Contributing
+# Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/sisyphus/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
