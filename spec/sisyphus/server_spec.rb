@@ -45,8 +45,8 @@ module Sisyphus
 
 				before do
 			#		FakeWeb.allow_net_connect = false					
-					MedusaRestClient::Stone = double("MedusaRestClient::Stone")
-					MedusaRestClient::Stone.stub(:new).with(stone_param).and_return(stone_obj)
+					MedusaRestClient::Specimen = double("MedusaRestClient::Specimen")
+					MedusaRestClient::Specimen.stub(:new).with(stone_param).and_return(stone_obj)
 					stone_obj.stub(:save).and_return(true)
 					stone_obj.stub(:upload_file).and_return(file_obj)
 					Tepra = double("Tepra")

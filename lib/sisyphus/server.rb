@@ -26,7 +26,7 @@ module Sisyphus
 			file = params.delete("file")
 			stone_params = params[:stone]
 			if stone_params
-				stone = MedusaRestClient::Stone.new(stone_params)
+				stone = MedusaRestClient::Specimen.new(stone_params)
 				if stone.save
 					label_string = "#{stone.global_id},\"#{stone.name}\""
 					if file
