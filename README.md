@@ -4,7 +4,7 @@ Provide a GUI-based web-client application for Medusa
 
 # Dependency
 
-## [medusa_rest_client](http://devel.misasa.okayama-u.ac.jp/gitlab/gems/medusa_rest_client/tree/master "follow instruction")
+## [medusa_rest_client](https://github.com/misasa/medusa_rest_client "follow instruction")
 
 
 # Installation
@@ -37,11 +37,3 @@ Commands are summarized as:
 See online document:
 
     $ sisyphus --help
-
-# Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/sisyphus/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
