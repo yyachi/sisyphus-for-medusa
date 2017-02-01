@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "fakeweb-matcher", "~> 1.2"
   
   spec.add_development_dependency "spork", "~> 0.9"
-  spec.add_development_dependency "guard-rspec", "~> 4.3"
+  #spec.add_development_dependency "guard-rspec", "~> 4.3"
   spec.add_development_dependency "simplecov-rcov", "~> 0.2.3"
   spec.add_development_dependency "rspec_junit_formatter", "~> 0.2.0"    
 end
