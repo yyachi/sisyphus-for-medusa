@@ -3,7 +3,7 @@ require 'sisyphus/server'
 
 class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 	def initialize
-		super '', 'Sisyphus HTTP server', :port => 8888, :bind => '0.0.0.0', :title => 'Sisyphus', :print_timeout => 10
+		super '', 'Sisyphus HTTP server', :port => 8890, :bind => '0.0.0.0', :title => 'Sisyphus', :print_timeout => 10
 
 		OptionParser.accept :Port do |port|
 			if port =~ /\A\d+\z/ then
@@ -50,7 +50,7 @@ See Also:
     http://dream.misasa.okayama-u.ac.jp
 
 Implementation:
-    Copyright (c) 2015 ISEI, Okayama University
+    Copyright (c) 2015-2017 IPM, Okayama University
     Licensed under the same terms as Ruby
 
 EOF

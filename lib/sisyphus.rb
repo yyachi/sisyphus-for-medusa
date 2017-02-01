@@ -3,7 +3,7 @@ require "sisyphus/version"
 module Sisyphus
   # Your code goes here...
   def self.port
-  	8888
+  	8890
   end  
 
   def self.bind

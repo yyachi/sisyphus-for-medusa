@@ -35,7 +35,7 @@ module Sisyphus::Commands
 				let(:options) { {:title => title, :print_timeout => timeout, :port => port, :bind => bind} }
 				let(:title){ 'Dream of HACTO' }
 				let(:timeout){ 30 }
-				let(:port){ 8888 }
+				let(:port){ 8890 }
 				let(:bind){ '0.0.0.0' }
 				#before do
 				#	Sisyphus.config = { }
