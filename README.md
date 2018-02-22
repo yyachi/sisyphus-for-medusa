@@ -1,6 +1,6 @@
 # sisyphus-for-medusa
 
-Provide a GUI-based web-client application for Medusa
+Create a stone with barcode label using web browser
 
 # Dependency
 
