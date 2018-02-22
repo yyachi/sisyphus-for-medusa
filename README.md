@@ -1,6 +1,6 @@
 # sisyphus-for-medusa
 
-Create a stone with barcode label using web browser
+Create stone in Medusa and print barcode label on MS-Windows
 
 # Dependency
 
