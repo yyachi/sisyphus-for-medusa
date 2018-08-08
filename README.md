@@ -2,6 +2,10 @@
 
 Create stone in Medusa and print barcode label on MS-Windows
 
+# Description
+
+Create stone in Medusa and print barcode label on MS-Windows
+
 # Dependency
 
 ## [medusa_rest_client](https://github.com/misasa/medusa_rest_client "follow instruction")
