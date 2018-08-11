@@ -60,7 +60,7 @@ class Sisyphus::Command
 			execute
 		end
 	rescue => ex
-		say "ERROR: #{ex}. See '#{program_name} --help'." 		
+		say "ERROR: #{ex}. See '#{program_name} --help'."
 	end
 
 	def handle_options(args)
@@ -97,7 +97,7 @@ class Sisyphus::Command
 		@parser.separator "  Description:"
 		formatted.split("\n").each do |line|
 			@parser.separator "    #{line.rstrip}"
-		end		
+		end
 	end
 
 	def add_parser_run_info title, content

@@ -20,7 +20,7 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 			end
 		end
 
-		add_option '-p', '--port=PORT', :Port, 'port to listen on' do |port, options|
+		add_option '-p', '--port=PORT', :Port, 'port to listen to' do |port, options|
 			options[:port] = port
 		end
 
@@ -28,7 +28,7 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 			options[:title] = title
 		end
 
-		add_option '-o', '--print-timeout=TIME', 'timeout of print' do |time, options|
+		add_option '-o', '--print-timeout=TIME', 'timeout on printing' do |time, options|
 			options[:print_timeout] = time.to_i
 		end
 
@@ -41,17 +41,27 @@ class Sisyphus::Commands::ServerCommand < Sisyphus::Command
 
 def description
 		<<-EOF
-GUI client application for Medusa
+Create stone in Medusa and print barcode label on MS-Windows.  This is
+a web-app that runs on PC.  By accessing the server by web browser
+that runs remotely or locally, an user can create a stone with label.
 
-Example:
-    $ sisyphus
+Synopsis:
+    CMD> sisyphus
 
 See Also:
     http://dream.misasa.okayama-u.ac.jp
 
+History:
+    August 11, 2018: Add documentation by TK.
+
 Implementation:
-    Copyright (c) 2015-2017 IPM, Okayama University
-    Licensed under the same terms as Ruby
+    Copyright (C) 2015-2018 Okayama University
+    License GPLv3+: GNU GPL version 3 or later
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 3, or (at your option)
+    any later version.
 
 EOF
 	end
