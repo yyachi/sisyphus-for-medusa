@@ -4,8 +4,8 @@ Create stone in Medusa and print barcode label on MS-Windows
 
 # Description
 
-Create stone in Medusa and print barcode label on MS-Windows.  This is
- that runs on PC.  By accessing the server by web browser
+Create stone in Medusa and print barcode label on MS-Windows.  This is Web App 
+that runs on PC.  By accessing the server by web browser
 that runs remotely or locally, an user can create a stone with label.
 
 # Dependency
