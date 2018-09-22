@@ -1,4 +1,4 @@
-# sisyphus-for-medusa
+# gem package -- sisyphus-for-medusa
 
 Create stone in Medusa and print barcode label on MS-Windows
 
