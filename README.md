@@ -15,17 +15,7 @@ that runs remotely or locally, an user can create a stone with label.
 
 # Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'sisyphus-for-medusa'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install this package by yourself as:
 
     $ gem source -a http://dream.misasa.okayama-u.ac.jp/rubygems
     $ gem install sisyphus-for-medusa
