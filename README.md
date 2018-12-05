@@ -10,7 +10,11 @@ that runs remotely or locally, an user can create a stone with label.
 
 # Dependency
 
-## [gem package -- medusa_rest_client](https://github.com/misasa/medusa_rest_client "follow instruction")
+## [gem package -- medusa_rest_client](https://github.com/misasa/medusa_rest_client)
+
+## [gem package -- tepra](https://github.com/misasa/tepra)
+
+
 
 
 # Installation
