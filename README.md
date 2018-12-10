@@ -21,7 +21,7 @@ as one does it using [Sisyphus for android](https://github.com/misasa/sisyphus).
 
 Install this package by yourself as:
 
-    $ gem source -a http://dream.misasa.okayama-u.ac.jp/rubygems
+    $ gem source -a http://dream.misasa.okayama-u.ac.jp/rubygems/
     $ gem install sisyphus-for-medusa
 
 # Commands
