@@ -55,7 +55,7 @@ History:
     August 11, 2018: Add documentation by TK.
 
 Implementation:
-    Copyright (C) 2015-2018 Okayama University
+    Copyright (C) 2015-2020 Okayama University
     License GPLv3+: GNU GPL version 3 or later
 
     This program is free software; you can redistribute it and/or modify
